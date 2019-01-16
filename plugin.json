@@ -1,0 +1,28 @@
+{
+    "id": "com.mattermost.facebook",
+    "name": "Facebook Plugin",
+    "description": "This plugin serves as a starting point for writing a Facebook plugin.",
+    "version": "0.0.1",
+    "server": {
+        "executables": {
+            "linux-amd64": "server/dist/plugin-linux-amd64",
+            "darwin-amd64": "server/dist/plugin-darwin-amd64",
+            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        }
+    },
+    "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+    },
+    "settings_schema": {
+        "header": "",
+        "footer": "Use this webhook URL to set up the SERVER API ENDPOINT. See [documentation](https://www.google.com/) to learn more.",
+        "settings": [{  
+            "key": "URLEndpoint",
+            "display_name": "SERVER API ENDPOINT",
+            "type": "text",
+            "help_text": "Enter your SERVER API ENDPOINT here",
+            "placeholder": "Enter your SERVER API ENDPOINT here",
+            "default": ""
+        }]
+    }
+}

@@ -1,0 +1,26 @@
+.btn-info{
+    background-color:#fff !important;
+    margin-right: 10px;
+}
+
+ .btn-info:hover{
+    background-color: rgb(35, 137, 215);
+}
+
+.card-body{
+    background-color: aliceblue;
+}
+
+.panel-default {
+    border-color: #fff;
+}
+
+.wrapper{
+    position: relative;
+    height: calc(100vh - 120px);
+}
+
+.button-footer{
+    position: absolute;
+    bottom: 3%;
+}
